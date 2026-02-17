@@ -1,0 +1,17 @@
+<div class="container auth-container">
+  <h1>Login</h1>
+  <form action="/login" method="POST">  <!-- POST route later -->
+    <label>Email</label>
+    <input type="email" name="email" required>
+    
+    <label>Password</label>
+    <input type="password" name="password" required>
+    
+    <button type="submit">Sign In</button>
+  </form>
+  <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+  <div class="social-auth">
+  <a href="/auth/google" class="google-btn">Sign in with Google</a>
+  <a href="/auth/apple" class="apple-btn">Sign in with Apple</a>
+</div>
+</div>

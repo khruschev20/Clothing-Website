@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= title || 'Clothing Store' %></title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <%- include('partials/navbar') %>
+
+  <main class="main-content">
+    <%- body %>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <%= new Date().getFullYear() %> Clothing Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/hero-slider.js"></script>
+  <!-- Add more scripts here later (cart.js, etc.) -->
+<script src="/js/theme.js"></script>
+</body>
+</html>

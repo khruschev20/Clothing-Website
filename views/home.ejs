@@ -1,0 +1,72 @@
+<!-- views/home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clothing Store - Home</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Include reusable navbar -->
+  <%- include('partials/navbar') %>
+
+  <!-- Hero Section with Auto-Changing Slideshow -->
+  <section class="hero">
+    <div class="slideshow-container">
+
+      <!-- Slide 1 -->
+      <div class="slide fade">
+        <img src="/images/hero1.jpg" alt="Fashion Collection 1">
+        <div class="hero-text">
+          <h1>New Summer Collection</h1>
+          <p>Discover trendy styles for every occasion</p>
+          <a href="/shop" class="btn">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide fade">
+        <img src="/images/hero2.jpg" alt="Fashion Collection 2">
+        <div class="hero-text">
+          <h1>Exclusive Deals</h1>
+          <p>Up to 50% off selected items</p>
+          <a href="/sale" class="btn">Explore Sale</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide fade">
+        <img src="/images/hero3.jpg" alt="Fashion Collection 3">
+        <div class="hero-text">
+          <h1>Timeless Elegance</h1>
+          <p>Premium quality clothing for you</p>
+          <a href="/premium" class="btn">View Collection</a>
+        </div>
+      </div>
+
+      <!-- Navigation arrows -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots (optional indicators) -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
+  <!-- Rest of your homepage content here -->
+  <main class="container">
+    <h2>Featured Products</h2>
+    <!-- Add your product grid here later -->
+  </main>
+
+  <script src="/js/hero-slider.js"></script>
+</body>
+</html>
